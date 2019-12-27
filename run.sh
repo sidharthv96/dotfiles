@@ -17,4 +17,3 @@ git clone https://github.com/sidharthv96/dotfiles.git
 cp dotfiles/* ./
 
 brew bundle
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
