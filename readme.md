@@ -9,3 +9,4 @@ sh -c "$(curl -x http://www-proxy-idc.in.oracle.com:80 -fsSL https://raw.githubu
 ```
 
 - Enter passwords when prompted in terminal
+- When Oh-My-Zsh installation finishes and a shell is opened, press Control + D to resume installation.
