@@ -5,7 +5,7 @@
 - Run the following Command
 
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/sidharthv96/dotfiles/master/run.sh)"
+sh -c "$(curl -x http://www-proxy-idc.in.oracle.com:80 https://raw.githubusercontent.com/sidharthv96/dotfiles/master/run.sh)"
 ```
 
 - Enter passwords when prompted in terminal
