@@ -2,8 +2,8 @@
 
 cd "$(dirname "${BASH_SOURCE}")";
 
-git pull origin master;
-
+# git pull origin master;
+pwd 
 function doIt() {
 	rsync --exclude ".git/" \
 		--exclude ".DS_Store" \
@@ -14,7 +14,7 @@ function doIt() {
 		--exclude "mac-config.sh" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
-	source "$HOME/.zshrc";
+    echo "Start a new shell session to see updates"
 }
 
 if [ "$1" == "--force" ] || [ "$1" == "-f" ]; then

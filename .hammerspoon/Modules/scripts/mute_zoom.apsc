@@ -1,0 +1,14 @@
+if application "zoom.us" is running then
+	tell application "zoom.us" to activate
+	tell application "System Events" to tell process "zoom.us"
+		if menu item "Unmute Audio" of menu 1 of menu bar item "Meeting" of menu bar 1 exists then
+			click menu item "Unmute Audio" of menu 1 of menu bar item "Meeting" of menu bar 1
+			display notification "Take care" with title "Zoom Un-Muted" subtitle "Everyone can hear you"
+		else
+			if menu item "Mute Audio" of menu 1 of menu bar item "Meeting" of menu bar 1 exists then
+				click menu item "Mute Audio" of menu 1 of menu bar item "Meeting" of menu bar 1
+				display notification "Relax" with title "Zoom Muted" subtitle "No one can hear you"
+			end if
+		end if
+	end tell
+end if

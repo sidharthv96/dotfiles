@@ -38,9 +38,9 @@ alias stKube='pon; kubectx stage; kubens helios-ci; export TILLER_NAMESPACE=heli
 
 alias helios='itermocil helios'
 
-# Dirty hack around McAfee 
-# alias brew='sudo chown -R $(whoami) /usr/local/bin /usr/local/lib; chmod u+w /usr/local/bin /usr/local/lib; brew'
-
 export TILLER_NAMESPACE=webhook
 export HELIOS_ENV=local
 export NODE_ENV=development
+
+poff
+host "orahub.oci.oraclecorp.com" &>/dev/null && { echo 'On Oracle network' ; pon; }

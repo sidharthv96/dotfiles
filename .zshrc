@@ -26,16 +26,6 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra,work}; do
 done;
 unset file;
 
-# Autocorrect typos in path names when using `cd`
-shopt -s cdspell;
-
-# Enable some Bash 4 features when possible:
-# * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
-# * Recursive globbing, e.g. `echo **/*.txt`
-for option in autocd globstar; do
-	shopt -s "$option" 2> /dev/null;
-done;
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -45,8 +35,6 @@ export PATH="$HOME/.bin:$HOME/bin:/usr/local/opt/ruby/bin:$HOME/go/bin:$PATH"
 eval "$(direnv hook zsh)"
 unalias gr
 
-poff
-host "orahub.oci.oraclecorp.com" &>/dev/null && { echo 'On Oracle network' ; pon; }
 ###-tns-completion-start-###
 if [ -f /Users/sidv/.tnsrc ]; then 
     source /Users/sidv/.tnsrc 

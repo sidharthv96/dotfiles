@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+
+# Create a new directory and enter it
+function mkd() {
+	mkdir -p "$@" && cd "$_";
+}
+
 function kl(){
    k logs "$(k8_get_partial_resource pods "$1")"
 }
@@ -27,5 +33,5 @@ function kx(){
 function krd(){
     #Restarts a deployment
     kubectl patch deployment "$(k8_get_partial_resource deployment "$1")" -p \
-  "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"date\":\"`date +'%s'`\"}}}}}"
+  "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"date\":\"$(date +'%s')\"}}}}}"
 }
