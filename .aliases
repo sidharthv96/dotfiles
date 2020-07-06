@@ -21,8 +21,8 @@ alias kd='k describe'
 alias grun='./gradlew run'
 alias gw='./gradlew'
 
-alias erc='code ~/dotfiles/.zshrc'
-alias src='source ~/dotfiles/.zshrc'
+alias erc='code ~/.zshrc'
+alias src='source ~/.zshrc'
 
 alias pm='python manage.py'
 alias serve='python3 -m http.server'

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Make vim the default editor.
-export EDITOR='code';
+export EDITOR='vim';
 
 export KUBETAIL_SINCE=10m
 export HOMEBREW_BUNDLE_FILE=/Users/sidv/Brewfile
