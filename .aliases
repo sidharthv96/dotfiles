@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+alias gp='git pull'
+
+alias -g G='| grep'
+alias -g C='| code -'
+alias -g CC='| pbcopy'
+
+alias -s {ape,avi,flv,m4a,mkv,mov,mp3,mp4,mpeg,mpg,ogg,ogm,wav,webm}=open
+alias -s git="git clone"
+
+alias p='python'
+# K8s aliases
+alias k='kubectl'
+alias kp='kube-prompt'
+alias kgp='k get pods'
+alias kkk='k get pods'
+alias kga='k get all'
+alias kd='k describe'
+
+alias grun='./gradlew run'
+alias gw='./gradlew'
+
+alias erc='code ~/.zshrc'
+alias src='source ~/.zshrc'
+
+alias pm='python manage.py'
+alias serve='python3 -m http.server'
+
+alias ls='ls -la'
+alias pf='lsof -i -P | grep '
+
+alias nrd='npm run dev'
+alias oj='ojet'
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
+# Show active network interfaces
+alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
+
+# Canonical hex dump; some systems have this symlinked
+command -v hd > /dev/null || alias hd="hexdump -C"
+
+# macOS has no `md5sum`, so use `md5` as a fallback
+command -v md5sum > /dev/null || alias md5sum="md5"
+
+# macOS has no `sha1sum`, so use `shasum` as a fallback
+command -v sha1sum > /dev/null || alias sha1sum="shasum"

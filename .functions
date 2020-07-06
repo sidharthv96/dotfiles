@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+function kl(){
+   k logs "$(k8_get_partial_resource pods "$1")"
+}
+function klf(){
+   k logs -f "$(k8_get_partial_resource pods "$1")"
+}
+function kt(){
+    kubetail "$1" -k pod
+}
+
+function k8_get_partial_resource() {
+    export iran="rta"
+    if [ ${#2} -ge 10 ]
+    then
+        echo "$2"
+    else 
+        kubectl get "$1" | awk -v str="$2" '$0 ~ str {print $1;exit}'
+    fi
+}
+
+function kx(){
+    k exec -it "$(k8_get_partial_resource pods "$1")" sh
+}
+
+function krd(){
+    #Restarts a deployment
+    kubectl patch deployment "$(k8_get_partial_resource deployment "$1")" -p \
+  "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"date\":\"`date +'%s'`\"}}}}}"
+}
