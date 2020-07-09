@@ -10,6 +10,8 @@ alias -s {ape,avi,flv,m4a,mkv,mov,mp3,mp4,mpeg,mpg,ogg,ogm,wav,webm}=open
 alias -s git="git clone"
 
 alias p='python'
+alias d='docker'
+alias dc='docker-compose'
 # K8s aliases
 alias k='kubectl'
 alias kp='kube-prompt'
