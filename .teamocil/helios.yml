@@ -1,0 +1,46 @@
+windows:
+  - name: helios
+    root: ~/dev/webhooks-service
+    layout: 3_columns
+    panes:
+      - commands:
+          - poff
+          - cd data-processor-service
+          - ./gradlew run
+        name: data-processor-service
+      - commands:
+          - poff
+          - cd data-provider-service
+          - ./gradlew run
+        name: data-provider-service
+      - commands:
+          - poff
+          - cd event-scheduler
+          - ./gradlew run
+        name: event-scheduler
+      - commands:
+          - poff
+          - cd external-event-processor-service
+          - ./gradlew run
+        name: external-event-processor-service
+      - commands:
+          - poff
+          - cd authentication-service
+          - npm run dev
+        name: authentication-service
+      - commands:
+          - poff
+          - cd lifecycle-service
+          - npm run dev
+        name: lifecycle-service
+      - commands:
+          - poff
+          - cd sender-service
+          - npm run dev
+        name: sender-service
+      - commands:
+          - poff
+          - cd ingestion-service
+          - npm run dev
+        name: receiver
+      - echo "Welcome"
