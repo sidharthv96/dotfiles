@@ -8,3 +8,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/z
 
 # Make sure Keybase FS is enabled
 gpg --import /keybase/private/sidharthv/gpg.key
+
+# Add VPN Password to Keychain
+/usr/bin/security add-generic-password -a Oracle_AnyConnect_VPN -s Oracle_AnyConnect_VPN -U -w
