@@ -30,7 +30,6 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra,work}; do
 done;
 unset file;
 
-eval "$(direnv hook zsh)"
 unalias gr
 
 ###-tns-completion-start-###

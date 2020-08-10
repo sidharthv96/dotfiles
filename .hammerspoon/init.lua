@@ -19,8 +19,9 @@ Install:andUse("ClipboardTool",
                {
                  disable = false,
                  config = {
+                   show_copied_alert = false,
                    show_in_menubar = false,
-                   paste_on_select = true
+                   paste_on_select = true,
                  },
                  hotkeys = {
                    toggle_clipboard = { { "cmd", "shift" }, "v" } 

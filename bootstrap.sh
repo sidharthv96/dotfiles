@@ -9,7 +9,7 @@ function doIt() {
 		--exclude ".DS_Store" \
 		--exclude ".osx" \
 		--exclude "bootstrap.sh" \
-		--exclude ".hammerspoon/Spoons" \
+		--exclude "onetime.sh" \
 		--exclude "readme.md" \
 		--exclude "readme.old.md" \
 		--exclude "mac-config.sh" \
