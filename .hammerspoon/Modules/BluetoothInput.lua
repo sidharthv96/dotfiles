@@ -9,7 +9,7 @@ function audioDeviceChanged(arg)
     elseif arg == 'dIn ' and os.time() - lastSetDeviceTime < 2 then
         inputDevice = hs.audiodevice.defaultInputDevice()
         if inputDevice:transportType() == 'Bluetooth' then
-            internalMic = lastInputDevice or hs.audiodevice.findInputByName('Built-in Microphone')
+            internalMic = lastInputDevice or hs.audiodevice.findInputByName('Built-in Microphone') or hs.audiodevice.findInputByName('Internal Microphone')
             internalMic:setDefaultInputDevice()
         end
     end
