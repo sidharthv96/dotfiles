@@ -82,6 +82,10 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
+# Increase Speed
+defaults write -g com.apple.mouse.scaling 6.0
+defaults write -g com.apple.trackpad.scaling 6.0
+
 
 ###############################################################################
 # Energy saving                                                               #
