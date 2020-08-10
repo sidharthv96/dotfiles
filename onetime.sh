@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+
+./brew.sh 
+
 touch ~/.secrets
 
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
