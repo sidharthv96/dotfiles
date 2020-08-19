@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+export ZSH_DISABLE_COMPFIX="true"
 export ZSH="$HOME/.oh-my-zsh"
 source "$HOME/.zprofile"
 source "$HOME/.secrets"

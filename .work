@@ -42,5 +42,8 @@ export TILLER_NAMESPACE=webhook
 export HELIOS_ENV=local
 export NODE_ENV=development
 
+# OCI CLI Autocomplete
+# [[ -e "/Users/sidv/lib/oracle-cli/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh" ]] && source "/Users/sidv/lib/oracle-cli/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh"
+
 poff
 host "orahub.oci.oraclecorp.com" &>/dev/null && { echo 'On Oracle network' ; pon; }

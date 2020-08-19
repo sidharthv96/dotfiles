@@ -21,34 +21,41 @@ brew "jq"
 brew "k6"
 # Tool that can switch between kubectl contexts easily and create aliases
 brew "kubectx"
-# Manage multiple Node.js versions
-brew "nvm"
+# Simplistic interactive filtering tool
+brew "peco"
 # Object-relational database system
 brew "postgresql", restart_service: true
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
 brew "rbenv"
-# Display directories as trees (with optional color/HTML output)
-brew "tree"
 # The Rust toolchain installer
 brew "rustup-init"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
 # Internet file retriever
 brew "wget"
+# UNIX shell (command interpreter)
+brew "zsh"
 brew "tomanthony/brews/itermocil"
 cask "android-platform-tools"
 cask "docker"
 cask "firefox"
 cask "font-fira-code"
+cask "google-chrome"
 cask "gpg-suite-no-mail"
 cask "hammerspoon"
 cask "iterm2"
 cask "itsycal"
 cask "jetbrains-toolbox"
+cask "karabiner-elements"
 cask "keybase"
+cask "lunar"
 cask "menumeters"
 cask "osxfuse"
 cask "postman"
 cask "rectangle"
+cask "slack"
 cask "the-unarchiver"
 cask "visual-studio-code"
+cask "zoomus"
