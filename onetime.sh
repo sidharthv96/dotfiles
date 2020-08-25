@@ -22,3 +22,6 @@ gpg --import /Volumes/Keybase/private/sidharthv/gpg.key
 
 # Add VPN Password to Keychain
 /usr/bin/security add-generic-password -a Oracle_AnyConnect_VPN -s Oracle_AnyConnect_VPN -U -w
+
+# Reinstall vscode extensions
+xargs -n1 code --install-extension < vscode.md
