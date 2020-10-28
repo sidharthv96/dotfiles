@@ -11,12 +11,9 @@ function copyAndSearch(url)
     end)
 end
 
-
 hs.hotkey.bind(hyper, "W", function()
     copyAndSearch("https://www.google.co.in/search?q=")
     end)
-
-
 
 hs.hotkey.bind(hyper, "Q", function()
     copyAndSearch("https://duckduckgo.com/?kp=-1&kl=in-en&kn=1&kz=1&kac=1&kae=d&k1=-1&q=")

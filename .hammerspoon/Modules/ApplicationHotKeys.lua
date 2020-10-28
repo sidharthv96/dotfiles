@@ -1,7 +1,7 @@
 require("common")
 
 local applicationHotkeys = {
-  a = 'Microsoft Edge Beta',
+  a = 'Google Chrome',
   d = 'iTerm',
   i = 'IntelliJ IDEA',
   s = 'Slack',

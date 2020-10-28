@@ -33,6 +33,10 @@ unset file;
 
 unalias gr
 
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init -)"
+fi
+
 ###-tns-completion-start-###
 if [ -f /Users/sidv/.tnsrc ]; then 
     source /Users/sidv/.tnsrc 
