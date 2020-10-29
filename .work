@@ -35,7 +35,7 @@ alias iKube='pon; kubectx integ; kubens helios-ci;'
 alias cKube='pon; kubectx corp; kubens helios-ci;'
 alias sKube='pon; kubectx integ; kubens helios-sidv;'
 alias stKube='pon; kubectx stage; kubens helios-ci;'
-alias kloop='while true; do; cls; kkk; done;'
+alias kloop='while true; do; clear; kkk; done;'
 
 alias helios='itermocil helios'
 
