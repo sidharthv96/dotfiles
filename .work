@@ -36,10 +36,11 @@ alias cKube='pon; kubectx corp; kubens helios-ci;'
 alias sKube='pon; kubectx integ; kubens helios-sidv;'
 alias stKube='pon; kubectx stage; kubens helios-ci;'
 alias kloop='while true; do; clear; kkk; done;'
+alias v1='export KUBECONFIG=~/.kube/config-v1'
+alias v2='export KUBECONFIG=~/.kube/config'
 
 alias helios='itermocil helios'
 
-export TILLER_NAMESPACE=webhook
 export HELIOS_ENV=local
 export NODE_ENV=development
 
