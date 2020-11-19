@@ -7,7 +7,7 @@ alias -g C='| code -'
 alias -g CC='| pbcopy'
 
 alias -s {ape,avi,flv,m4a,mkv,mov,mp3,mp4,mpeg,mpg,ogg,ogm,wav,webm}=open
-alias -s git="git clone"
+alias -s git="git clone --depth 1 "
 
 alias p='python'
 alias d='docker'
@@ -17,6 +17,7 @@ alias k='kubectl'
 alias kp='kube-prompt'
 alias kgp='k get pods'
 alias kkk='k get pods'
+alias kkkk='k get pods -w'
 alias kga='k get all'
 alias kd='k describe'
 

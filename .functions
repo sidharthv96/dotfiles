@@ -7,10 +7,10 @@ function mkd() {
 }
 
 function kl(){
-   k logs "$(k8_get_partial_resource pods "$1")"
+   k logs "$(k8_get_partial_resource pods "$1")" -c app
 }
 function klf(){
-   k logs -f "$(k8_get_partial_resource pods "$1")"
+   k logs -f "$(k8_get_partial_resource pods "$1")" -c app
 }
 function kt(){
     kubetail "$1" -k pod
@@ -27,7 +27,7 @@ function k8_get_partial_resource() {
 }
 
 function kx(){
-    k exec -it "$(k8_get_partial_resource pods "$1")" sh
+    k exec -it "$(k8_get_partial_resource pods "$1")" -c app sh
 }
 
 function krd(){
