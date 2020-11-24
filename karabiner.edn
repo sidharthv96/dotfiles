@@ -1,0 +1,75 @@
+{:devices {:exkb [{:vendor_id 9610, :product_id 26}]},
+ :simlayers {:period-mode {:key :period},
+             :arrow-mode {:key :f},
+             :d-mode {:key :d}
+             :mouse_keys_mode_v4    {:key :a :afterup {:set ["mouse_keys_mode_v4_scroll" 0]}}},
+ :main [{:des "External Keyboard CMD Option swap",
+         :rules [:exkb
+                 [:left_command :left_option]
+                 [:left_option :left_command]]}
+        {:des "Period Mode",
+         :rules [:period-mode
+                 [:a [:!Sgrave_accent_and_tilde :slash]]
+                 [:s [:period :!S8]]]}
+        {:des   "Mouse Keys Mode v4 (rev 1)"
+        :rules [[:##j {:mkey {:vwheel 32}} [["mouse_keys_mode_v4_scroll" 1]] ["mouse_keys_mode_v4" 1]]
+                [:##l {:mkey {:hwheel 32}} [["mouse_keys_mode_v4_scroll" 1]] ["mouse_keys_mode_v4" 1]]
+                [:##k {:mkey {:vwheel -32}} [["mouse_keys_mode_v4_scroll" 1]] ["mouse_keys_mode_v4" 1]]
+                [:##semicolon {:mkey {:hwheel -32}} [["mouse_keys_mode_v4_scroll" 1]] ["mouse_keys_mode_v4" 1]]
+                :mouse_keys_mode_v4
+                [:##j {:mkey {:y 2048}}]
+                [:##k {:mkey {:y -2048}}]
+                [:##l {:mkey {:x -2048}}]
+                [:##semicolon {:mkey {:x 2048}}]
+                [:##v {:pkey :button1}]
+                [:##b {:pkey :button3}]
+                [:##n {:pkey :button2}]
+                [:##s ["mouse_keys_mode_v4_scroll" 1] nil {:afterup ["mouse_keys_mode_v4_scroll" 0]}]
+                [:##f {:mkey {:speed 0.2}}]]}
+        {:des "Arrow Keys and nav",
+         :rules [:arrow-mode
+                 [:j :down_arrow]
+                 [:k :up_arrow ]
+                 [:l :left_arrow ]
+                 [:semicolon :right_arrow ]
+                 [:##m :!CSopen_bracket ]
+                 [:##comma :!CSclose_bracket ]]}
+        {:des "quick bracket/braces sequences",
+         :rules [:d-mode
+                 [:k :!S9]
+                 [:l :!S0 ]
+                 [:j :!Sopen_bracket ]
+                 [:semicolon :!Sclose_bracket ]
+                 [:s :open_bracket ]
+                 [:f :close_bracket ]]}
+        {:des "quick modifiers",
+         :rules [[:slash :right_command nil {:alone :slash}]
+                 [:spacebar :left_shift nil {:alone :spacebar}]
+                 [:z :left_control nil {:alone :x}]
+                 [[:j :k] :escape]
+                 [:caps_lock [:!C!T!Oleft_shift] nil {:alone :delete_or_backspace}]]}
+        
+        {:des "colemak-dh",
+         :rules [[:##b :z]
+                 [:##c :d]
+                 [:##d :s]
+                 [:##e :f]
+                 [:##f :t]
+                 [:##h :k]
+                 [:##i :u]
+                 [:##j :n]
+                 [:##k :e]
+                 [:##l :i]
+                 [:##m :h]
+                 [:##n :m]
+                 [:##o :y]
+                 [:##p :semicolon]
+                 [:##q :q]
+                 [:##r :p]
+                 [:##s :r]
+                 [:##t :b]
+                 [:##u :l]
+                 [:##x :c]
+                 [:##y :j]
+                 [:##z :x]
+                 [:##semicolon :o]]}]}
