@@ -7,6 +7,8 @@ source "$HOME/.secrets"
 export ZSH_THEME="spaceship"
 SPACESHIP_GCLOUD_SHOW=false
 SPACESHIP_PROMPT_DEFAULT_PREFIX="| "
+SPACESHIP_KUBECTL_SHOW=true
+SPACESHIP_KUBECTL_VERSION_SHOW=false
 # HIST_STAMPS="mm/dd/yyyy"
 plugins=(git kubetail z zsh-autosuggestions npm vscode web-search safe-paste zsh-peco-history)
 
