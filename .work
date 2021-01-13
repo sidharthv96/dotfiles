@@ -44,7 +44,6 @@ export NODE_ENV=development
 # OCI CLI Autocomplete
 # [[ -e "/Users/sidv/lib/oracle-cli/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh" ]] && source "/Users/sidv/lib/oracle-cli/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh"
 
-poff
-host "orahub.oci.oraclecorp.com" &>/dev/null && { echo 'On Oracle network' ; pon; }
+host "orahub.oci.oraclecorp.com" &>/dev/null && { echo 'On Oracle network' ; nvmi; pon; }
 
 export KUBECONFIG=~/.kube/config-all

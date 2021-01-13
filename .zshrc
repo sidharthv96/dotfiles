@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
+# zmodload zsh/zprof
 export ZSH_DISABLE_COMPFIX="true"
 export ZSH="$HOME/.oh-my-zsh"
 #source "$HOME/.zprofile"
 source "$HOME/.secrets"
 export ZSH_THEME="spaceship"
+SPACESHIP_GCLOUD_SHOW=false
+SPACESHIP_PROMPT_DEFAULT_PREFIX="| "
 # HIST_STAMPS="mm/dd/yyyy"
-plugins=(git kubetail z colored-man-pages zsh-autosuggestions npm vscode web-search safe-paste zsh-peco-history)
+plugins=(git kubetail z zsh-autosuggestions npm vscode web-search safe-paste zsh-peco-history)
 
 HISTSIZE=10000000
 SAVEHIST=10000000
@@ -19,9 +22,9 @@ ssh-add ~/.ssh/id_rsa &>/dev/null
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -42,3 +45,4 @@ if [ -f /Users/sidv/.tnsrc ]; then
     source /Users/sidv/.tnsrc 
 fi
 ###-tns-completion-end-###
+# zprof

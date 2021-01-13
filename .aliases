@@ -14,6 +14,7 @@ alias d='docker'
 alias dc='docker-compose'
 # K8s aliases
 alias k='kubectl'
+alias ks='kubectx -c; kubens -c'
 alias kp='kube-prompt'
 alias kgp='k get pods'
 alias kkk='k get pods'
