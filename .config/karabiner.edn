@@ -1,5 +1,5 @@
 {:devices {:exkb [{:vendor_id 9610, :product_id 26}],
-           :apkb [{:vendor_id 1452, :product_id 635}],
+           :apkb [{:vendor_id 1452, :product_id 641}],
            :dakb [{:vendor_id 17485, :product_id 13366}]},
  :simlayers {:period-mode {:key :period},
              :arrow-mode {:key :f},
