@@ -1,12 +1,12 @@
 [user]
-	name = sidv
-	email = sidharth.v@oracle.com
+   name = Sidharth Vinod
+   email = sidharthv96@gmail.com
 
-[includeIf "gitdir:~/dev/"]
-   path = .gitconfig_work
+# [includeIf "gitdir:~/dev/"]
+#    path = .gitconfig_oracle
  
-[includeIf "gitdir:~/oss_dev/"]
-   path = .gitconfig_github
+# [includeIf "gitdir:~/oss_dev/"]
+#    path = .gitconfig_github
 
 [alias]
 
