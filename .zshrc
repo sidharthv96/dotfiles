@@ -51,3 +51,4 @@ if [ -f /Users/sidv/.tnsrc ]; then
 fi
 ###-tns-completion-end-###
 # zprof
+nvmi
