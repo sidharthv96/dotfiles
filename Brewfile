@@ -1,5 +1,5 @@
 tap "candid82/brew"
-tap "heroku/brew"
+# tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -18,55 +18,55 @@ brew "cmake"
 # Go dependency management tool
 brew "dep"
 # Command-line tool for the fn project
-brew "fn"
+# brew "fn"
 # GitHub command-line tool
 brew "gh"
 # Kubernetes package manager
-brew "helm"
+# brew "helm"
 # Deploy Kubernetes Helm Charts
-brew "helmfile"
+# brew "helmfile"
 # Helm Charts as Code tool
-brew "helmsman"
+# brew "helmsman"
 # Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
+# brew "openssl@1.1"
 # Library for command-line editing
-brew "readline"
+# brew "readline"
 # Command-line interface for SQLite
 brew "sqlite"
 # General-purpose data compression with high compression ratio
 brew "xz"
 # User-friendly cURL replacement (command-line HTTP client)
-brew "httpie"
+# brew "httpie"
 # Configurable static site generator
 brew "hugo"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Modern load testing tool, using Go and JavaScript
-brew "k6"
+# brew "k6"
 # Tool that can switch between kubectl contexts easily and create aliases
-brew "kubectx"
+# brew "kubectx"
 # Build tool for Clojure
-brew "leiningen"
+# brew "leiningen"
 # Oracle Cloud Infrastructure CLI
-brew "oci-cli"
+# brew "oci-cli"
 # Simplistic interactive filtering tool
 brew "peco"
 # Object-relational database system
-brew "postgresql", restart_service: true
+# brew "postgresql", restart_service: true
 # Python version management
 brew "pyenv"
 # Install various Ruby versions and implementations
-brew "ruby-build"
+# brew "ruby-build"
 # Ruby version manager
-brew "rbenv"
+# brew "rbenv"
 # Rsync for cloud storage
-brew "rclone"
+# brew "rclone"
 # Powerful, clean, object-oriented scripting language
-brew "ruby"
+# brew "ruby"
 # Rust toolchain installer
-brew "rustup-init"
+# brew "rustup-init"
 # Low-level access to audio, keyboard, mouse, joystick, and graphics
-brew "sdl2"
+# brew "sdl2"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Internet file retriever
@@ -85,9 +85,9 @@ brew "tomanthony/brews/itermocil"
 # karabiner configurator
 brew "yqrashawn/goku/goku"
 cask "android-platform-tools"
-cask "bitwarden"
+# cask "bitwarden"
 cask "docker"
-cask "duplicati"
+# cask "duplicati"
 cask "firefox"
 cask "font-fira-code"
 cask "google-chrome"
@@ -96,17 +96,17 @@ cask "gpg-suite-no-mail"
 cask "hammerspoon"
 cask "iterm2"
 cask "itsycal"
-cask "jetbrains-toolbox"
+# cask "jetbrains-toolbox"
 cask "karabiner-elements"
 cask "keybase"
-cask "kitty"
+# cask "kitty"
 cask "lunar"
 cask "menumeters"
-cask "osxfuse"
+# cask "osxfuse"
 cask "postman"
-cask "rectangle"
+# cask "rectangle"
 cask "slack"
 cask "the-unarchiver"
 cask "visual-studio-code"
 cask "vlc"
-cask "zoomus"
+# cask "zoomus"
