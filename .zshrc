@@ -2,6 +2,7 @@
 # zmodload zsh/zprof
 export ZSH_DISABLE_COMPFIX="true"
 export ZSH="$HOME/.oh-my-zsh"
+export ZSH_CUSTOM="$HOME/.oh-my-zsh"
 #source "$HOME/.zprofile"
 source "$HOME/.secrets"
 export ZSH_THEME="spaceship"
@@ -37,6 +38,8 @@ done;
 unset file;
 
 unalias gr
+
+eval $(/opt/homebrew/bin/brew shellenv)
 
 if command -v pyenv 1>/dev/null 2>&1; then
     eval "$(pyenv init -)"
