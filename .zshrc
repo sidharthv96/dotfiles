@@ -52,3 +52,4 @@ fi
 ###-tns-completion-end-###
 # zprof
 nvmi
+export GPG_TTY=$(tty)
