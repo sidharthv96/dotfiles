@@ -70,15 +70,17 @@
         {:des "quick modifiers",
          :rules [[:slash :right_command nil {:alone :slash}]
                  [:spacebar :left_shift nil {:alone :spacebar}]
-                ;  [:z :left_control nil {:alone :z}]
-                ;  [[:j :k] :escape]
-                ;  [[:k :l] :return_or_enter]
                  [:##delete_or_backspace
                   [:!C!T!Oleft_shift]
                   nil
                   {:alone :delete_or_backspace,
                    :held :delete_or_backspace}]
                  [:##caps_lock :delete_or_backspace]]}
+        {:des "quick modifiers built in",
+         :rules [:apkb
+                 [:z :left_control nil {:alone :x}]
+                 [[:j :k] :escape]
+                 [[:k :l] :return_or_enter]]}
         {:des "Launcher Mode [W] as Trigger Key",
          :rules [:launch-mode
                  [:k [:launch "Slack"]]
