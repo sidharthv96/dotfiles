@@ -77,7 +77,7 @@
                    :held :delete_or_backspace}]
                  [:##caps_lock :delete_or_backspace]]}
         {:des "quick modifiers built in",
-         :rules [:apkb
+         :rules [:apkb :!qwerty-mode
                  [:z :left_control nil {:alone :x}]
                  [[:j :k] :escape]
                  [[:k :l] :return_or_enter]]}
@@ -94,15 +94,15 @@
                  [[:q :1] ["qwerty-mode" 1]]
                  [[:q :2] ["qwerty-mode" 0]]]}
         {:des "Dactyl Colemak DHm",
-         :rules [:dakb :!qwerty-mode
-                 [:##v :d]
-                 [:##b :v]]}
+         :rules [:dakb
+                 [:##v :d :!qwerty-mode]
+                 [:##b :v :!qwerty-mode]]}
         {:des "Apple Colemak DH",
-         :rules [:apkb :!qwerty-mode
-                 [:##b :z]
-                 [:##c :d]
-                 [:##x :c]
-                 [:##z :x]]}         
+         :rules [:apkb
+                 [:##b :z :!qwerty-mode]
+                 [:##c :d :!qwerty-mode]
+                 [:##x :c :!qwerty-mode]
+                 [:##z :x :!qwerty-mode]]}         
         {:des "colemak-dh",
          :rules [:!qwerty-mode
                  [:##d :s]
