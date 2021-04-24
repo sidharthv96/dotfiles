@@ -89,18 +89,22 @@
                  [:m [:launch "zoom.us"]]
                  [:n [:launch "IntelliJ IDEA"]]
                  [:l [:launch "Visual Studio Code"]]]}
+        {:des "QWERTY Mode",
+         :rules [
+                 [[:q :1] ["qwerty-mode" 1]]
+                 [[:q :2] ["qwerty-mode" 0]]]}
         {:des "Dactyl Colemak DHm",
-         :rules [:dakb
+         :rules [:dakb :!qwerty-mode
                  [:##v :d]
                  [:##b :v]]}
         {:des "Apple Colemak DH",
-         :rules [:apkb
+         :rules [:apkb :!qwerty-mode
                  [:##b :z]
                  [:##c :d]
                  [:##x :c]
                  [:##z :x]]}         
         {:des "colemak-dh",
-         :rules [
+         :rules [:!qwerty-mode
                  [:##d :s]
                  [:##e :f]
                  [:##f :t]
