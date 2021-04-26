@@ -77,10 +77,10 @@
                    :held :delete_or_backspace}]
                  [:##caps_lock :delete_or_backspace]]}
         {:des "quick modifiers built in",
-         :rules [:apkb :!qwerty-mode
-                 [:z :left_control nil {:alone :x}]
-                 [[:j :k] :escape]
-                 [[:k :l] :return_or_enter]]}
+         :rules [:apkb 
+                 [:z :left_control nil {:alone :x} :!qwerty-mode]
+                 [[:j :k] :escape :!qwerty-mode]
+                 [[:k :l] :return_or_enter :!qwerty-mode]]}
         {:des "Launcher Mode [W] as Trigger Key",
          :rules [:launch-mode
                  [:k [:launch "Slack"]]
