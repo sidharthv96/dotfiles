@@ -1,5 +1,4 @@
 tap "candid82/brew"
-# tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -13,62 +12,32 @@ tap "tomanthony/brews"
 tap "yqrashawn/goku"
 # Get/set bluetooth power and discoverable state
 brew "blueutil"
-# Cross-platform make
-brew "cmake"
-# Go dependency management tool
-brew "dep"
-# Command-line tool for the fn project
-# brew "fn"
-# GitHub command-line tool
-brew "gh"
-# Kubernetes package manager
-# brew "helm"
-# Deploy Kubernetes Helm Charts
-# brew "helmfile"
-# Helm Charts as Code tool
-# brew "helmsman"
-# Cryptography and SSL/TLS Toolkit
-# brew "openssl@1.1"
-# Library for command-line editing
-# brew "readline"
 # Command-line interface for SQLite
 brew "sqlite"
 # General-purpose data compression with high compression ratio
 brew "xz"
-# User-friendly cURL replacement (command-line HTTP client)
-# brew "httpie"
+# Cross-platform make
+brew "cmake"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# GitHub command-line tool
+brew "gh"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Bash-tool to store the private data inside a git repo
+brew "git-secret"
 # Configurable static site generator
 brew "hugo"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Modern load testing tool, using Go and JavaScript
-# brew "k6"
-# Tool that can switch between kubectl contexts easily and create aliases
-# brew "kubectx"
-# Build tool for Clojure
-# brew "leiningen"
-# Oracle Cloud Infrastructure CLI
-# brew "oci-cli"
 # Simplistic interactive filtering tool
 brew "peco"
-# Object-relational database system
-# brew "postgresql", restart_service: true
-# Python version management
-brew "pyenv"
-# Install various Ruby versions and implementations
-# brew "ruby-build"
-# Ruby version manager
-# brew "rbenv"
-# Rsync for cloud storage
-# brew "rclone"
-# Powerful, clean, object-oriented scripting language
-# brew "ruby"
-# Rust toolchain installer
-# brew "rustup-init"
-# Low-level access to audio, keyboard, mouse, joystick, and graphics
-# brew "sdl2"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# JavaScript toolchain manager for reproducible environments
+brew "volta"
 # Internet file retriever
 brew "wget"
 # Process YAML documents from the CLI
@@ -84,29 +53,40 @@ brew "teamookla/speedtest/speedtest"
 brew "tomanthony/brews/itermocil"
 # karabiner configurator
 brew "yqrashawn/goku/goku"
+# Android SDK component
 cask "android-platform-tools"
-# cask "bitwarden"
-cask "docker"
-# cask "duplicati"
+# Data backup and storage service
+cask "backblaze"
+# Web browser focusing on privacy
+cask "brave-browser"
+# Web browser
 cask "firefox"
 cask "font-fira-code"
+# Web browser
 cask "google-chrome"
-cask "google-cloud-sdk"
-cask "gpg-suite-no-mail"
+# Desktop automation application
 cask "hammerspoon"
+# Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Menu bar calendar
 cask "itsycal"
-# cask "jetbrains-toolbox"
+# Keyboard customizer
 cask "karabiner-elements"
+# End-to-end encryption software
 cask "keybase"
-# cask "kitty"
+# Adaptive brightness for external displays
 cask "lunar"
+# Set of CPU, memory, disk, and network monitoring tools
 cask "menumeters"
-# cask "osxfuse"
+# Collaboration platform for API development
 cask "postman"
-# cask "rectangle"
+# Instant messaging application focusing on security
+cask "signal"
+# Team communication and collaboration software
 cask "slack"
+# Unpacks archive files
 cask "the-unarchiver"
+# Open-source code editor
 cask "visual-studio-code"
+# Multimedia player
 cask "vlc"
-# cask "zoomus"

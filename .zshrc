@@ -25,10 +25,6 @@ ssh-add ~/.ssh/id_rsa &>/dev/null
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -51,5 +47,8 @@ if [ -f /Users/sidv/.tnsrc ]; then
 fi
 ###-tns-completion-end-###
 # zprof
-nvmi
-export GPG_TTY=$(tty)
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/sidv/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/sidv/bin/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/sidv/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/sidv/bin/google-cloud-sdk/completion.zsh.inc'; fi

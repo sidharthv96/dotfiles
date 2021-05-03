@@ -17,3 +17,8 @@ export PATH="$HOME/.bin:$HOME/bin:/usr/local/opt/ruby/bin:$HOME/go/bin:$PATH:$HO
 export PRE_COMMIT_ALLOW_NO_CONFIG=1
 export GOPATH=~/go
 export PATH="$PATH:$GOPATH/bin"
+
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+export GPG_TTY=$(tty)
