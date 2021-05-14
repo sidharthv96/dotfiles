@@ -12,6 +12,10 @@ tap "tomanthony/brews"
 tap "yqrashawn/goku"
 # Get/set bluetooth power and discoverable state
 brew "blueutil"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
+# Library for command-line editing
+brew "readline"
 # Command-line interface for SQLite
 brew "sqlite"
 # General-purpose data compression with high compression ratio
@@ -34,6 +38,8 @@ brew "jq"
 brew "peco"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
+# Python version management
+brew "pyenv"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # JavaScript toolchain manager for reproducible environments
@@ -84,6 +90,8 @@ cask "postman"
 cask "signal"
 # Team communication and collaboration software
 cask "slack"
+# Real time file synchronization software
+cask "syncthing"
 # Unpacks archive files
 cask "the-unarchiver"
 # Open-source code editor

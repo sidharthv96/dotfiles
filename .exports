@@ -22,3 +22,22 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
 export GPG_TTY=$(tty)
+
+LDFLAGS=(
+    '-L/opt/homebrew/opt/openssl@1.1/lib'
+    '-L/opt/homebrew/opt/readline/lib'
+    '-L/opt/homebrew/opt/sqlite/lib'
+    '-L/opt/homebrew/opt/zlib/lib'
+)
+
+export LDFLAGS
+
+CPPFLAGS=(
+    '-I/opt/homebrew/opt/openssl@1.1/include'
+    '-I/opt/homebrew/opt/readline/include'
+    '-I/opt/homebrew/opt/sqlite/include'
+    '-I/opt/homebrew/opt/zlib/include'
+)
+
+export CPPFLAGS
+
