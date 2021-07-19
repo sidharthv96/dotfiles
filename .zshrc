@@ -5,13 +5,8 @@ export ZSH="$HOME/.oh-my-zsh"
 export ZSH_CUSTOM="$HOME/.oh-my-zsh"
 #source "$HOME/.zprofile"
 source "$HOME/.secrets"
-export ZSH_THEME="spaceship"
-SPACESHIP_GCLOUD_SHOW=false
-SPACESHIP_PROMPT_DEFAULT_PREFIX="| "
-SPACESHIP_KUBECTL_SHOW=true
-SPACESHIP_KUBECTL_VERSION_SHOW=false
 # HIST_STAMPS="mm/dd/yyyy"
-plugins=(git kubetail z zsh-autosuggestions npm vscode web-search safe-paste zsh-peco-history)
+plugins=(git z zsh-autosuggestions npm vscode web-search safe-paste zsh-peco-history) # kubetail
 
 HISTSIZE=10000000
 SAVEHIST=10000000
@@ -52,3 +47,6 @@ if [ -f '/Users/sidv/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/sidv/b
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/sidv/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/sidv/bin/google-cloud-sdk/completion.zsh.inc'; fi
+
+eval "$(starship init zsh)"
+eval "$(rbenv init -)"

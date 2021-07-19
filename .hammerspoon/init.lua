@@ -9,6 +9,8 @@ Install:andUse("HeadphoneAutoPause",
                }
 )
 
+Install:andUse('MicMute', {hotkeys = {toggle = {{"alt"}, "space"}}})
+
 -- Install:andUse("Caffeine",
 --                {
 --                  start = true
