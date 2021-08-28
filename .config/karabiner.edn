@@ -13,11 +13,16 @@
          :rules [:exkb
                  [:##left_command :left_option]
                  [:##left_option :left_command]]}
-        {:des "Period Mode",
+        ;; .a -> ~/, .s -> .*
+        {:des "Period Mode", 
          :rules [:period-mode
                  [:a [:!Sgrave_accent_and_tilde :slash]]
                  [:s [:period :!S8]]]}
-        {:des "Mouse Keys Mode v4 (rev 1)",
+        ;; Move Mouse -> a + jkl;
+        ;; Scroll -> S
+        ;; Fine movement -> F
+        ;; N/M/H -> Left/Right/Middle Click
+        {:des "Mouse Keys Mode", 
          :rules [[:##j
                   {:mkey {:vwheel 32}}
                   [["mouse_keys_mode_v4_scroll" 1]]
@@ -39,14 +44,17 @@
                  [:##k {:mkey {:y -2048}}]
                  [:##l {:mkey {:x -2048}}]
                  [:##semicolon {:mkey {:x 2048}}]
-                 [:##v {:pkey :button1}]
-                 [:##b {:pkey :button3}]
-                 [:##n {:pkey :button2}]
+                 [:##n {:pkey :button1}]
+                 [:##m {:pkey :button2}]
+                 [:##h {:pkey :button3}]
                  [:##s
                   ["mouse_keys_mode_v4_scroll" 1]
                   nil
                   {:afterup ["mouse_keys_mode_v4_scroll" 0]}]
                  [:##f {:mkey {:speed 0.2}}]]}
+        ;; Arrow Keys -> F + jkl;
+        ;; Left/Right screen -> F + . or /
+        ;; Left/Right tab -> F + m/,
         {:des "Arrow Keys and nav",
          :rules [:arrow-mode
                  [:##j :down_arrow]
@@ -57,13 +65,15 @@
                  [:##slash :!Tright_arrow]
                  [:##m :!CSopen_bracket]
                  [:##comma :!CSclose_bracket]]}
+        ;; Tap Right command to switch windows
         {:des "Right cmd -> cmd+tab",
          :rules [[:right_command :right_command nil {:alone :!Ctab}]]}
+        ;; Easy Brackets -> D + j(, k), l{, m}, s[, f]
         {:des "quick bracket/braces sequences",
          :rules [:d-mode
-                 [:k :!S9]
-                 [:l :!S0]
-                 [:j :!Sopen_bracket]
+                 [:j :!S9]
+                 [:k :!S0]
+                 [:l :!Sopen_bracket]
                  [:semicolon :!Sclose_bracket]
                  [:s :open_bracket]
                  [:f :close_bracket]]}
@@ -81,14 +91,16 @@
                  [:z :left_control nil {:alone :x} :!qwerty-mode]
                  [[:j :k] :escape :!qwerty-mode]
                  [[:k :l] :return_or_enter :!qwerty-mode]]}
-        {:des "Launcher Mode [W] as Trigger Key",
+        ;; Launch apps with S + jkl;nm
+        {:des "Launcher Mode [S] as Trigger Key",
          :rules [:launch-mode
-                 [:k [:launch "Slack"]]
+                 [:j [:launch "Firefox"]]
+                 [:k [:launch "Visual Studio Code - Insiders"]]]}
+                 [:l [:launch "Discord"]]
                  [:semicolon [:launch "iTerm"]]
-                 [:j [:launch "Brave Browser"]]
+                 [:n [:launch "Slack"]]
                  [:m [:launch "zoom.us"]]
-                 [:n [:launch "IntelliJ IDEA"]]
-                 [:l [:launch "Visual Studio Code"]]]}
+        ;; Switch between Qwerty and Colemak with Q+1/2
         {:des "QWERTY Mode",
          :rules [
                  [[:q :1] ["qwerty-mode" 1]]
