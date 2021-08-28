@@ -95,11 +95,11 @@
         {:des "Launcher Mode [S] as Trigger Key",
          :rules [:launch-mode
                  [:j [:launch "Firefox"]]
-                 [:k [:launch "Visual Studio Code - Insiders"]]]}
+                 [:k [:launch "Visual Studio Code - Insiders"]]
                  [:l [:launch "Discord"]]
                  [:semicolon [:launch "iTerm"]]
                  [:n [:launch "Slack"]]
-                 [:m [:launch "zoom.us"]]
+                 [:m [:launch "zoom.us"]]]}
         ;; Switch between Qwerty and Colemak with Q+1/2
         {:des "QWERTY Mode",
          :rules [
