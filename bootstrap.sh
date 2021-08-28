@@ -20,8 +20,9 @@ function doIt() {
 		--exclude "mac-config.sh" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
+	echo "Regenerating Karabiner config..."
 	goku;
-    echo "Start a new shell session to see updates"
+  echo "Start a new shell session to see updates."
 }
 
 if [ "$1" == "--force" ] || [ "$1" == "-f" ]; then
