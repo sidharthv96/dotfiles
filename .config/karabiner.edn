@@ -68,15 +68,15 @@
         ;; Tap Right command to switch windows
         {:des "Right cmd -> cmd+tab",
          :rules [[:right_command :right_command nil {:alone :!Ctab}]]}
-        ;; Easy Brackets -> D + j(, k), l{, m}, s[, f]
+        ;; Easy Brackets -> D + j(, k), l{, m}, i[, o]
         {:des "quick bracket/braces sequences",
          :rules [:d-mode
                  [:j :!S9]
                  [:k :!S0]
                  [:l :!Sopen_bracket]
                  [:semicolon :!Sclose_bracket]
-                 [:s :open_bracket]
-                 [:f :close_bracket]]}
+                 [:i :open_bracket]
+                 [:o :close_bracket]]}
         {:des "quick modifiers",
          :rules [[:slash :right_command nil {:alone :slash}]
                  [:spacebar :left_shift nil {:alone :spacebar}]
