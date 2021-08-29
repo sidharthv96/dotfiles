@@ -40,13 +40,13 @@
                   [["mouse_keys_mode_v4_scroll" 1]]
                   ["mouse_keys_mode_v4" 1]]
                  :mouse_keys_mode_v4
-                 [:##j {:mkey {:y 2048}}]
-                 [:##k {:mkey {:y -2048}}]
-                 [:##l {:mkey {:x -2048}}]
-                 [:##semicolon {:mkey {:x 2048}}]
-                 [:##n {:pkey :button1}]
-                 [:##m {:pkey :button2}]
-                 [:##h {:pkey :button3}]
+                 [:##j {:mkey {:y 1750}}]
+                 [:##k {:mkey {:y -1750}}]
+                 [:##l {:mkey {:x -1750}}]
+                 [:##semicolon {:mkey {:x 1750}}]
+                 [:##m {:pkey :button1}]
+                 [:##comma {:pkey :button2}]
+                 [:##n {:pkey :button3}]
                  [:##s
                   ["mouse_keys_mode_v4_scroll" 1]
                   nil
