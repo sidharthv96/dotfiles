@@ -49,4 +49,7 @@ if [ -f '/Users/sidv/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/sidv/b
 if [ -f '/Users/sidv/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/sidv/bin/google-cloud-sdk/completion.zsh.inc'; fi
 
 eval "$(starship init zsh)"
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

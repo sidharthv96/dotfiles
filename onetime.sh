@@ -5,8 +5,7 @@
 mkdir ~/.nvm
 
 touch ~/.secrets
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
@@ -16,10 +15,10 @@ git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/z
 git clone https://github.com/johanhaleby/kubetail $ZSH_CUSTOM/plugins/kubetail
 
 # Make sure Keybase FS is enabled
-gpg --import /Volumes/Keybase/private/sidharthv/gpg.key
+# gpg --import /Volumes/Keybase/private/sidharthv/gpg.key
 
 # Add VPN Password to Keychain
 # /usr/bin/security add-generic-password -a Oracle_AnyConnect_VPN -s Oracle_AnyConnect_VPN -U -w
 
 # Reinstall vscode extensions
-xargs -n1 code --install-extension < vscode.md
+# xargs -n1 code --install-extension < vscode.md
