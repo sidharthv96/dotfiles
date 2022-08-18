@@ -14,6 +14,11 @@ git clone https://github.com/jimeh/zsh-peco-history $ZSH_CUSTOM/plugins/zsh-peco
 git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone https://github.com/johanhaleby/kubetail $ZSH_CUSTOM/plugins/kubetail
 
+wget "https://github.com/Hammerspoon/Spoons/raw/master/Spoons/SpoonInstall.spoon.zip"
+unzip SpoonInstall.spoon.zip
+rm SpoonInstall.spoon.zip
+mv SpoonInstall.spoon ~/.hammerspoon/Spoons/
+
 # Make sure Keybase FS is enabled
 # gpg --import /Volumes/Keybase/private/sidharthv/gpg.key
 
