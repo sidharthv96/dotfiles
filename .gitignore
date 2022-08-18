@@ -11,3 +11,4 @@ Thumbs.db
 .Trashes
 .gitsecret/keys/random_seed
 !*.secret
+confidential/Dark-Reader-Settings.json
