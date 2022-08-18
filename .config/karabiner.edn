@@ -1,5 +1,8 @@
 {:devices {:exkb [{:vendor_id 9610, :product_id 26}],
-           :apkb [{:vendor_id 1452, :product_id 641}],
+           :apkb [
+                {:vendor_id 1452, :product_id 641} ;; M1 MBA
+                {:vendor_id 1452, :product_id 834} ;; M1 Pro MBP
+                ],
            :crkb [{:vendor_id 18003, :product_id 1}],
            :dakb [{:vendor_id 17485, :product_id 13366}]},
  :simlayers {:period-mode {:key :period},
