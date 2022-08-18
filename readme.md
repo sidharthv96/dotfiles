@@ -66,6 +66,24 @@ When setting up a new Mac, you may want to install some common [Homebrew](https:
 
 Some of the functionality of these dotfiles depends on formulae installed by `brew.sh`. If you don’t plan to run `brew.sh`, you should look carefully through the script and manually install any particularly important ones. A good example is Bash/Git completion: the dotfiles use a special version from Homebrew.
 
+### Secrets
+
+Confidential files can be stored safely in the repo using [git secret](https://git-secret.io)
+
+```bash
+# To check in
+# Put confidential files in `./confidential`
+git secret add confidential
+git secret hide
+git add .
+
+# To access
+git secret reveal
+
+# To see diff
+git secret changes
+```
+
 ## Feedback
 
 Suggestions/improvements
