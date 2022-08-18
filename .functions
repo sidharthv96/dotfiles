@@ -35,3 +35,7 @@ function krd(){
     kubectl patch deployment "$(k8_get_partial_resource deployment "$1")" -p \
   "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"date\":\"$(date +'%s')\"}}}}}"
 }
+
+function yat(){
+    yarn add -D "@types/$1"
+}

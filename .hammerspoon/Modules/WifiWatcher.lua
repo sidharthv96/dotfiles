@@ -19,14 +19,14 @@ end
 local muteSSID = {
   ["Hacker"] = true,
   ["Hacker_5G"] = true,
-  ["OnePlus 7T"] = true,
+  ["HotPot"] = true,
   ["clear-corporate"] = false
 }
 
 local lastSSID = hs.wifi.currentNetwork()
 local officeSSID = "clear-corporate"
 local urlToLoad = "http://8.8.8.8"
-local browser = "Microsoft Edge Beta"
+local browser = "Firefox"
 local i = 0
 
 function reachedOffice()

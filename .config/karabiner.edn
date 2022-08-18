@@ -87,11 +87,16 @@
                   {:alone :delete_or_backspace,
                    :held :delete_or_backspace}]
                  [:##caps_lock :delete_or_backspace]]}
-        {:des "quick modifiers built in",
+        {:des "quick modifiers built in Apple",
          :rules [:apkb 
-                 [:z :left_control nil {:alone :x} :!qwerty-mode]
-                 [[:j :k] :escape :!qwerty-mode]
-                 [[:k :l] :return_or_enter :!qwerty-mode]]}
+                [:z :left_control nil {:alone :x} :!qwerty-mode]]}
+        {:des "quick modifiers built in Corne",
+         :rules [:crkb 
+                 [:z :left_control nil {:alone :z} :!qwerty-mode]]}
+        {:des "quick modifiers built in",
+         :rules [:!qwerty-mode 
+                 [[:j :k] :escape]
+                 [[:k :l] :return_or_enter]]}
         ;; Launch apps with S + jkl;nm
         {:des "Launcher Mode [S] as Trigger Key",
          :rules [:launch-mode

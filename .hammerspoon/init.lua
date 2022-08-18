@@ -17,20 +17,20 @@ Install:andUse('MicMute', {hotkeys = {toggle = {{"alt"}, "space"}}})
 --                }
 -- )
 
-Install:andUse("ClipboardTool",
-               {
-                 disable = false,
-                 config = {
-                   show_copied_alert = false,
-                   show_in_menubar = false,
-                   paste_on_select = true,
-                 },
-                 hotkeys = {
-                   toggle_clipboard = { { "cmd", "shift" }, "v" } 
-                  },
-                 start = true,
-               }
-)
+-- Install:andUse("ClipboardTool",
+--                {
+--                  disable = false,
+--                  config = {
+--                    show_copied_alert = false,
+--                    show_in_menubar = false,
+--                    paste_on_select = true,
+--                  },
+--                  hotkeys = {
+--                    toggle_clipboard = { { "cmd", "shift" }, "v" } 
+--                   },
+--                  start = true,
+--                }
+-- )
 
 -- Install:andUse("WindowScreenLeftAndRight",
 --                {
@@ -65,23 +65,23 @@ Install:andUse("WindowGrid",
                }
 )
 
-usbWatcher = nil
+-- usbWatcher = nil
 
-function usbDeviceCallback(data)
-  print(data)
-  print(data["productName"])
+-- function usbDeviceCallback(data)
+--   print(data)
+--   print(data["productName"])
 
-  hs.inspect.inspect(data)
-    if (data["productName"] == "DELL DA300") then
-        if (data["eventType"] == "added") then
-            hs.application.launchOrFocus("Slack")
-        elseif (data["eventType"] == "removed") then
-            -- app = hs.appfinder.appFromName("ScanSnap Manager")
-            -- app:kill()
-            print("Dock disconnected")
-        end
-    end
-end
+--   hs.inspect.inspect(data)
+--     if (data["productName"] == "DELL DA300") then
+--         if (data["eventType"] == "added") then
+--             hs.application.launchOrFocus("Slack")
+--         elseif (data["eventType"] == "removed") then
+--             -- app = hs.appfinder.appFromName("ScanSnap Manager")
+--             -- app:kill()
+--             print("Dock disconnected")
+--         end
+--     end
+-- end
 
-usbWatcher = hs.usb.watcher.new(usbDeviceCallback)
-usbWatcher:start()
+-- usbWatcher = hs.usb.watcher.new(usbDeviceCallback)
+-- usbWatcher:start()

@@ -23,6 +23,8 @@ alias kkk='k get pods'
 alias kkkk='k get pods -w'
 alias kga='k get all'
 alias kd='k describe'
+alias kns='kubens'
+alias hf='helmfile'
 
 alias grun='./gradlew run'
 alias gw='./gradlew'
@@ -38,6 +40,9 @@ alias pf='lsof -i -P | grep '
 
 alias nrd='npm run dev'
 alias yd='yarn dev'
+alias ya='yarn add'
+alias yad='yarn add -D'
+
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
