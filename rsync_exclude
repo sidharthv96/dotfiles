@@ -1,0 +1,17 @@
+rsync_exclude
+.git
+.DS_Store
+.osx
+.gitsecret
+.gitignore
+confidential
+bootstrap.sh
+onetime.sh
+readme.md
+vscode.md
+backup.sh
+brew.sh
+run.sh
+old.readme.md
+mac-config.sh
+LICENSE-MIT.txt
