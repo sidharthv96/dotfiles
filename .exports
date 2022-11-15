@@ -43,3 +43,5 @@ CPPFLAGS=(
 
 export CPPFLAGS
 
+export PNPM_HOME="/Users/sidv/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
