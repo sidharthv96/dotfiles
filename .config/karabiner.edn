@@ -3,7 +3,10 @@
                 {:vendor_id 1452, :product_id 641} ;; M1 MBA
                 {:vendor_id 1452, :product_id 834} ;; M1 Pro MBP
                 ],
-           :crkb [{:vendor_id 18003, :product_id 1}],
+           :crkb [
+                {:vendor_id 18003, :product_id 1}
+                {:vendor_id 7504, :product_id 24926}
+                ],
            :dakb [{:vendor_id 17485, :product_id 13366}]},
  :simlayers {:period-mode {:key :period},
              :arrow-mode {:key :f},
