@@ -89,6 +89,7 @@
 [core]
 
 	autocrlf = input
+	ignorecase = false
 
 	# Use custom `.gitignore` and `.gitattributes`.
 	excludesfile = ~/.gitignore
