@@ -24,6 +24,8 @@ Install:andUse("ClipboardTool",
                    show_copied_alert = false,
                    show_in_menubar = false,
                    paste_on_select = true,
+                   hist_size = 25,
+                   max_size = true,
                  },
                  hotkeys = {
                    toggle_clipboard = { { "cmd", "shift" }, "v" } 

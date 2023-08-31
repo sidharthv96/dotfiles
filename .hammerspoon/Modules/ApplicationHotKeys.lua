@@ -17,7 +17,7 @@ end)
 hs.hotkey.bind(hyper, 'k', function()
     killMode = true
     if( killMode ) then
-      hs.notify.show("Kill mode on", "Press Caps + <hotKey>", 'to kill application')      
+      hs.notify.show("Kill mode on", "Press delete + <hotKey>", 'to kill application')      
       fallBack.start()
     end
   end)

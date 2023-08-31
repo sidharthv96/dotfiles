@@ -50,3 +50,11 @@ if [ -f '/Users/sidv/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/
 
 eval "$(starship init zsh)"
 # eval "$(rbenv init -)"
+
+# pnpm
+export PNPM_HOME="$HOME/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end% 
