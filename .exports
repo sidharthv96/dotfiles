@@ -43,3 +43,4 @@ export CPPFLAGS
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.bun"
 export PATH="$PATH:$HOME/.deno"
+export NODE_OPTIONS="--max-old-space-size=4096"

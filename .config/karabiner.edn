@@ -1,5 +1,6 @@
 {:devices {:exkb [{:vendor_id 9610, :product_id 26}],
            :apkb [
+                {:vendor_id 13364, :product_id 560} ;; K3 Pro
                 {:vendor_id 1452, :product_id 641} ;; M1 MBA
                 {:vendor_id 1452, :product_id 834} ;; M1 Pro MBP
                 ],

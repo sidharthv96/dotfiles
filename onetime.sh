@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-./brew.sh 
-
-mkdir ~/.nvm
+# ./brew.sh 
 
 touch ~/.secrets
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+brew install wget
+softwareupdate --install-rosetta
 
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
