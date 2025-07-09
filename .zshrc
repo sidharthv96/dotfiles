@@ -51,13 +51,18 @@ if [ -f '/Users/sidv/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/
 eval "$(starship init zsh)"
 # eval "$(rbenv init -)"
 
+# bun completions
+[ -s "$HOME/.bun/_bun" ] && source "/$HOME/.bun/_bun"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end% 
+# pnpm end
 
-# bun completions
-[ -s "$HOME/.bun/_bun" ] && source "/$HOME/.bun/_bun"
+export NODE_OPTIONS="--max-old-space-size=48256"
+. "$HOME/.cargo/env"
